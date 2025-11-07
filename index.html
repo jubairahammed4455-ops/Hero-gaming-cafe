@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hero Gaming Cafe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(135deg, #ff4800, #ff7300);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-bottom: 2rem;
+      letter-spacing: -1px;
+    }
+
+    .pill {
+      display: inline-block;
+      background: linear-gradient(90deg, #ff4800, #ff7300);
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.3rem;
+      padding: 0.9rem 2.4rem;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+      transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    .pill:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    .controller {
+      width: 70px;
+      height: 45px;
+      margin-top: 1.8rem;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      .pill {
+        font-size: 1rem;
+        padding: 0.8rem 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Visit<br>Hero<br>Gaming<br>Cafe</h1>
+
+  <a class="pill"
+     href="https://m.facebook.com/story.php?story_fbid=pfbid02hyXVzEN7xN9iP4XUDbykwcMmfWR2bsBN9HKVQUowvRRbDjF8YXgGDoM3H4CB18zxl&id=61567183790159&mibextid=Nif5oz"
+     target="_blank"
+     rel="noopener noreferrer">
+    CLICK THE LINK!
+  </a>
+
+  <svg class="controller" viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+    <rect width="64" height="40" rx="8" fill="#0e0e0e"/>
+    <g transform="translate(7,6)" fill="#fde9d6">
+      <circle cx="42" cy="6" r="2.8"/>
+      <circle cx="46" cy="11" r="2.8"/>
+      <circle cx="38" cy="11" r="2.8"/>
+      <path d="M6 6h6v6H6zM2 10h6v6H2z" />
+    </g>
+  </svg>
+</body>
+</html>
