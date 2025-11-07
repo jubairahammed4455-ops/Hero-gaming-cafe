@@ -1,4 +1,3 @@
-# Hero-gaming-cafe
 <!doctype html>
 <html lang="en">
 <head>
@@ -151,3 +150,67 @@
   </main>
 </body>
 </html>
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #d62828, #ff6600);
+  color: #fff;
+  padding: 20px;
+}
+
+.hero-left {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.hero-left p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.cta-wrap .pill {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #ff4500;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.cta-wrap .pill:hover {
+  background: #ff6600;
+  transform: scale(1.05);
+}
+
+.hero-right {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-bg .controller {
+  width: 120px;
+  height: auto;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
